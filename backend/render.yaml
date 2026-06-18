@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: invoice-ai-backend
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false

@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 20% 98%;
+  --foreground: 220 18% 12%;
+  --card: 0 0% 100%;
+  --muted: 210 15% 92%;
+  --primary: 173 74% 28%;
+  --accent: 43 92% 56%;
+  --destructive: 0 72% 45%;
+  --border: 214 18% 84%;
+}
+
+.dark {
+  --background: 220 18% 10%;
+  --foreground: 210 20% 96%;
+  --card: 220 16% 14%;
+  --muted: 218 14% 22%;
+  --primary: 174 67% 43%;
+  --accent: 43 92% 58%;
+  --destructive: 0 74% 56%;
+  --border: 218 14% 27%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+/* Smooth premium theme transitions */
+html.theme-transition,
+html.theme-transition * {
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+}

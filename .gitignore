@@ -1,0 +1,33 @@
+# Python virtual environments
+.venv/
+.venv/
+.venv-1/
+
+# Environment variables
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Databases
+*.db
+*.sqlite3
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# Build
+dist/
+build/
+
+# Uploaded files
+backend/storage/uploads/
+backend/storage/reports/
+
+# VS Code
+.vscode/

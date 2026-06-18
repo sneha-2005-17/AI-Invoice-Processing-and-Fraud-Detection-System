@@ -1,0 +1,19 @@
+(globalThis["TURBOPACK"] || (globalThis["TURBOPACK"] = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/frontend/components/dashboard/analytics-charts.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  "static/chunks/19xk_recharts_es6_util_1lh9z7u._.js",
+  "static/chunks/19xk_recharts_es6_component_0tri4vs._.js",
+  "static/chunks/19xk_recharts_es6_state_1g225mz._.js",
+  "static/chunks/19xk_recharts_es6_cartesian_1n2rly2._.js",
+  "static/chunks/19xk_recharts_es6_20lpmf3._.js",
+  "static/chunks/19xk_20rwy7d._.js",
+  "static/chunks/frontend_components_dashboard_analytics-charts_tsx_1vl87mp._.js",
+  "static/chunks/frontend_components_dashboard_analytics-charts_tsx_00k2kdk._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/frontend/components/dashboard/analytics-charts.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+]);
