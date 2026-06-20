@@ -90,6 +90,12 @@ async def add_security_headers(request: Request, call_next):
 def health() -> dict:
     return {"status": "ok"}
 
+    @app.get("/")
+def root():
+    return {
+        "message": "AI Invoice Processing and Fraud Detection API is running successfully!"
+    }
+
 
 app.include_router(auth.router, prefix="/api")
 app.include_router(invoices.router, prefix="/api")
